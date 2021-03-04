@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="470-4Z-qlt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="470-4Z-qlt">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -31,7 +33,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11x-Lk-O8g" userLabel="Lab Reset Button">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11x-Lk-O8g" userLabel="Lab Reset Button">
                                 <rect key="frame" x="91" y="224" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="1cX-lD-8oJ"/>
@@ -42,14 +44,14 @@
                                     <action selector="lapResetTimer:" destination="9Ga-Al-aPs" eventType="touchUpInside" id="PMa-Be-fLE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nr2-Wa-6Di" userLabel="Start Stop Button">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nr2-Wa-6Di" userLabel="Start Stop Button">
                                 <rect key="frame" x="211" y="224" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="MKd-uF-fum"/>
                                     <constraint firstAttribute="height" constant="80" id="UxB-YV-fD4"/>
                                 </constraints>
                                 <state key="normal" title="START">
-                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" systemColor="systemGreenColor"/>
                                 </state>
                                 <connections>
                                     <action selector="playPauseTimer:" destination="9Ga-Al-aPs" eventType="touchUpInside" id="Nuo-Ia-XIi"/>
@@ -59,20 +61,20 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="117"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="clip" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="16X-9I-MUM" userLabel="Main Timer Label">
-                                        <rect key="frame" x="116.5" y="53" width="181.5" height="52"/>
+                                        <rect key="frame" x="118" y="53" width="178" height="52"/>
                                         <accessibility key="accessibilityConfiguration" label="00:00:00"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="43"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e15-qX-w4D" userLabel="Lab Timer Label">
-                                        <rect key="frame" x="226.5" y="29" width="71.5" height="21"/>
+                                        <rect key="frame" x="225" y="29" width="71" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstItem="16X-9I-MUM" firstAttribute="top" secondItem="e15-qX-w4D" secondAttribute="bottom" constant="3" id="PGF-lr-SGg"/>
                                     <constraint firstItem="16X-9I-MUM" firstAttribute="centerY" secondItem="m9n-9g-QPF" secondAttribute="centerY" constant="20.5" id="ZOb-23-SG6"/>
@@ -84,29 +86,29 @@
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ySZ-Jl-hJG">
                                 <rect key="frame" x="0.0" y="328" width="414" height="545.5"/>
-                                <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="lapCell" id="d5P-9P-OXS">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d5P-9P-OXS" id="tSD-5m-W62">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lab Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8B-9N-Qua">
-                                                    <rect key="frame" x="46" y="11" width="74.5" height="21.5"/>
+                                                    <rect key="frame" x="46" y="11" width="74" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main Timer Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2py-BZ-ckQ">
-                                                    <rect key="frame" x="141.5" y="11" width="131.5" height="21"/>
+                                                    <rect key="frame" x="142" y="11" width="130.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="13" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lab Timer Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjN-YP-Gkk">
-                                                    <rect key="frame" x="266" y="11" width="123" height="21"/>
+                                                    <rect key="frame" x="267" y="11" width="122" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -122,12 +124,13 @@
                                                 <constraint firstItem="2py-BZ-ckQ" firstAttribute="centerX" secondItem="tSD-5m-W62" secondAttribute="centerX" id="eLw-ov-35L"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="92z-75-66F"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
                             <constraint firstItem="ySZ-Jl-hJG" firstAttribute="top" secondItem="11x-Lk-O8g" secondAttribute="bottom" constant="24" id="81M-OF-FO3"/>
                             <constraint firstItem="m9n-9g-QPF" firstAttribute="leading" secondItem="92z-75-66F" secondAttribute="leading" id="Bid-Ao-CSO"/>
@@ -141,14 +144,13 @@
                             <constraint firstAttribute="bottomMargin" secondItem="ySZ-Jl-hJG" secondAttribute="bottom" constant="-11.5" id="qm0-WV-32Z"/>
                             <constraint firstItem="nr2-Wa-6Di" firstAttribute="top" secondItem="m9n-9g-QPF" secondAttribute="bottom" constant="19" id="wqf-pv-D7A"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="92z-75-66F"/>
                     </view>
                     <navigationItem key="navigationItem" title="Stopwatch" id="4jV-cs-QeP"/>
                     <connections>
-                        <outlet property="labTimerLabel" destination="e15-qX-w4D" id="DR2-r3-wNj"/>
+                        <outlet property="labTimerLabel" destination="e15-qX-w4D" id="KEQ-xL-jg5"/>
                         <outlet property="lapResetButton" destination="11x-Lk-O8g" id="JWr-ES-PcO"/>
                         <outlet property="lapsTableView" destination="ySZ-Jl-hJG" id="BLN-E3-yyw"/>
-                        <outlet property="mainTimerLabel" destination="16X-9I-MUM" id="R5B-7Q-DMx"/>
+                        <outlet property="mainTimerLabel" destination="16X-9I-MUM" id="Qfb-NS-fLg"/>
                         <outlet property="playPauseButton" destination="nr2-Wa-6Di" id="Jqv-e2-Pme"/>
                     </connections>
                 </viewController>
@@ -157,4 +159,12 @@
             <point key="canvasLocation" x="389.85507246376812" y="139.28571428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
